@@ -1,5 +1,7 @@
 services:
-  nginx:
-    image: nginx:latest
+  server_mi-web:
+    image: nginx
     ports:
-      - "80:80"
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
